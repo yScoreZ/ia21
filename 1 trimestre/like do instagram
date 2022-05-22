@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<header>
+
+    <a class="navbar-brand" href="https://www.instagram.com/nathan_amorim123/" target="_blank"><img
+        src="Instagram_logo.svg.png" style=" max-width:2000px; 
+    max-height:80px"></a>
+
+    
+</header>
+<head>
+    <meta charset="UTF-8">
+    <title>Like do Insta</title>
+    <style>
+        
+         
+           body{
+            height: 98vhs;
+            background-image: url("euu.jpg");
+            background-position:600px
+                                50px   ;
+            background-size: 500px;
+            background-repeat: no-repeat;
+            
+
+           }
+
+           div{
+            width: 10vh;
+            height: 5S0vh;
+            flex: none;
+            position: relative;
+            border: 0 none;
+             transform: rotate(2deg) scale(.5);
+            transition: .5s;
+            /* transition: 1000ms; */
+            top: 500px;
+            left: 630px;
+        }
+
+        main {
+
+            user-select: none;
+            color: black;
+            display: flex;
+            cursor: pointer;
+            font-size: 25vh;
+
+}
+
+        div:first-child {
+            width: 40vh;
+            height: 40vh;
+            flex: none;
+            position: relative;
+            border: 0 none;
+            background-color: gray;
+            transform: rotate(45deg) scale(.5);
+            transition: .3s;
+            /* transition: 300ms; */
+        }
+
+        div:first-child:hover {
+            background-color: red;
+        }
+
+        div:first-child:before,
+        div:first-child:after {
+            content: " ";
+            background-color: inherit;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        div:first-child:before {
+            top: -50%;
+            left: 0%;
+        }
+
+        div:first-child:after {
+            top: 0%;
+            left: -50%;
+        }
+
+              
+
+    </style>
+</head>
+
+<body>
+    <div class="box border"></div>
+    <main>
+        <div> </div>
+        <div>1000000...</div>
+    </main>
+    <script>
+        const domMain = document.querySelector("main")
+        // const domDivNum = document.querySelector("main div:last-child")
+        const domDivNum = domMain.querySelector("div:last-child")
+        let counter = 0
+        domMain.addEventListener("click", () => {
+            counter++
+            domDivNum.innerHTML = counter
+        })
+
+        
+    </script>
+
+      
+
+        <header>
+        
+            
+</body>
+       
+</html>
